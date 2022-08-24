@@ -1,9 +1,9 @@
-local token = "250822003" --TOKEN
+local token = "25082003" --TOKEN
 local acesso = nil
 local verificar = nil
 
 PerformHttpRequest('http://api.ipify.org/', function(errorCode, resultData, resultHeaders)
-PerformHttpRequest('https://acesso-base-kizzy.000webhostapp.com/index.html', function(errorCode, resultData2, resultHeaders) --Meter website do token
+PerformHttpRequest('https://acess-kizzy.000webhostapp.com/token.html', function(errorCode, resultData2, resultHeaders) --Meter website do token
 			if acesso == nil then
 		
 				for k,v in ipairs(GetPlayerIdentifiers(source))do
@@ -41,7 +41,7 @@ end)
 
 
 
-PerformHttpRequest('https://acesso-base-kizzy.000webhostapp.com/index.html', function(errorCode, resultData, resultHeaders)
+PerformHttpRequest('https://acess-kizzy.000webhostapp.com/token.html', function(errorCode, resultData, resultHeaders)
 	if token == tostring(resultData) then
 		print("TOKEN AUTENTICADO COM SUCCESSO ✔️")
 	else if acesso == nil then
@@ -60,9 +60,9 @@ PerformHttpRequest('https://acesso-base-kizzy.000webhostapp.com/index.html', fun
 		
 		print("\27[31mTOKEN NÃO AUTENTICADO!")
 		Citizen.Wait(1000)
-		print("\27[0mEsta Base Pertence ao Krystal!")
+		print("\27[0mEsta Base Pertence ao Joney da Royal Store!")
 		Citizen.Wait(1000)
-		print("\27[0mPara teres acesso a esta base entra neste Discord: Https://discord.gg/FMQyvhtxk9")
+		print("\27[0mPara teres acesso a esta base entra neste Discord: Https://discord.gg/NBZHzuP9kU")
 		Citizen.Wait(7000)
 		print("\27[0mO Servidor irá desligar dentro 3 Segundos!")
 		Citizen.Wait(1000)
@@ -70,7 +70,7 @@ PerformHttpRequest('https://acesso-base-kizzy.000webhostapp.com/index.html', fun
 		Citizen.Wait(1000)
 		print("\27[0mO Servidor irá desligar dentro 1 Segundos!")
 		Citizen.Wait(1000)
-		print("\27[0mA REINICIAR...")
+		print("\27[0mA DESLIGAR...")
 		os.exit()
 	end
 end)
