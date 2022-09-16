@@ -1,4 +1,4 @@
-local token = "25082003" --TOKEN
+local token = "25082222003" --TOKEN
 local acesso = nil
 local verificar = nil
 
